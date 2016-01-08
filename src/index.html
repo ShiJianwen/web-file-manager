@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 文件管理系统</title>
+	<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+	<link rel="stylesheet" href="components/bootstrap-material-design/dist/css/ripples.min.css"></head>
+	<link rel="stylesheet" href="public/css/index.css">
+<body>
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="javascript:void(0)">多用户文件管理系统</a>
+			</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse"></div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+
+					<div class="panel-heading web-files-dir">/</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-md-12 web-files-content">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group label-floating file-input">
+					<label class="control-label" for="focusedInput1">文件名</label>
+					<input class="form-control file-name-input" id="focusedInput1" type="text"></div>
+				<a href="javascript:void(0)" class="btn btn-raised btn-primary" id="add-file">新建文件</a>
+				<a href="javascript:void(0)" class="btn btn-raised btn-success" id="add-folder">新建文件夹</a>
+				<a href="javascript:void(0)" class="btn btn-raised btn-info" id="back-to-root">返回根目录</a>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="file-detail">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<input id="rewrite-text" />
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="confirm-rewrite">确认修改</button>
+					<button type="button" class="btn btn-danger">删除文件</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="components/jquery/dist/jquery.min.js"></script>
+	<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="components/bootstrap-material-design/dist/js/material.min.js"></script>
+	<script src="components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+	<script>$.material.init();</script>
+	<script src="public/js/disk.js"></script>
+	<script src="public/js/index.js"></script>
+</body>
+</html>

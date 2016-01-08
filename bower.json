@@ -1,0 +1,23 @@
+{
+  "name": "web-file",
+  "version": "0.0.0",
+  "authors": [
+    "ShiJianwen <shijianwen95@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "~0.5.7",
+    "material-design-icons": "~2.1.3"
+  }
+}
